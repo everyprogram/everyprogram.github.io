@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Every λ Program</title>
+    <link rel="stylesheet" type="text/css" href="css/article.css">
+</head>
+<body>
+    <header>
+        <h1>About Every λ Program</h1>
+        <nav>
+            <a href="index.html">Explorer</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/everyprogram/everyprogram.github.io">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="article">
+
+            <p>This project implements a bijective Gödel encoding for lambda calculus terms, allowing systematic exploration of the entire space of possible terms.</p>
+
+            <h3>Bijective Gödel Encoding</h3>
+            <p>While traditional Gödel numbering maps programs to numbers, many numbers don't map back to valid programs. A bijective encoding ensures:</p>
+            <ul>
+                <li>Every number corresponds to a valid program</li>
+                <li>Every possible program has a unique number</li>
+            </ul>
+
+            <h3>Key Benefits</h3>
+            <ul>
+                <li><strong>Completeness:</strong> Systematic testing can cover the entire space of possible terms up to a given size</li>
+                <li><strong>Parallelization:</strong> The work of exploring the space can be trivially divided across machines</li>
+                <li><strong>Resumable:</strong> Searches can be paused and resumed from any point</li>
+                <li><strong>Dense Encoding:</strong> The space of programs is contiguous, making it efficient to store results in bitsets</li>
+            </ul>
+
+            <h3>Technical Implementation</h3>
+            <p>The encoding uses the Rosenberg-Strong pairing function to handle product types (like function application) in a balanced way. This ensures that as numbers get larger, both sides of paired terms grow at roughly the same rate.</p>
+
+            <h3>Further Reading</h3>
+            <p>For those interested in the theoretical foundations, see Paul Tarau's work on <a href="https://scholar.google.com/scholar?q=Bijective+Godel+Encoding">Bijective Gödel Encodings</a>.</p>
+        </section>
+    </div>
+</body>
+</html>

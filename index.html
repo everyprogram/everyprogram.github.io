@@ -1,109 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Every Lambda Term</title>
-    <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-color: #000000;
-            --header-bg: #ffffff;
-            --border-color: #eeeeee;
-            --hover-bg: #f8f9fa;
-            --muted-text: #666666;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1e1e1e;
-                --text-color: #ffffff;
-                --header-bg: #252526;
-                --border-color: #333333;
-                --hover-bg: #2d2d2d;
-                --muted-text: #a0a0a0;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        header {
-            padding: 1rem;
-            background: var(--header-bg);
-            border-bottom: 1px solid var(--border-color);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .container {
-            flex: 1;
-            overflow: auto;
-            position: relative;
-        }
-
-        #virtualContent {
-            position: absolute;
-            width: 100%;
-            will-change: transform;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed;
-        }
-
-        tr {
-            height: 40px;
-        }
-
-        tr:hover {
-            background-color: var(--hover-bg);
-        }
-
-        td {
-            padding: 0.5rem 1rem;
-            border-bottom: 1px solid var(--border-color);
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
-        }
-
-        td:first-child {
-            width: 200px;
-            color: var(--muted-text);
-        }
-
-        footer {
-            padding: 0.5rem;
-            background: var(--header-bg);
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.875rem;
-            color: var(--muted-text);
-        }
-    </style>
+    <title>Every Program</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <header>
-        <h1>Every Lambda Term</h1>
+        <h1>Every λ Program</h1>
+        <nav>
+            <a href="index.html">Explorer</a>
+            <a href="about.html">About</a>
+            <a href="https://github.com/everyprogram/everyprogram.github.io">GitHub</a>
+        </nav>
     </header>
 
     <div class="container" id="container">
