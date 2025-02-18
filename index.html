@@ -3,6 +3,26 @@
 <head>
     <title>Every Lambda Term</title>
     <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --header-bg: #ffffff;
+            --border-color: #eeeeee;
+            --hover-bg: #f8f9fa;
+            --muted-text: #666666;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1e1e1e;
+                --text-color: #ffffff;
+                --header-bg: #252526;
+                --border-color: #333333;
+                --hover-bg: #2d2d2d;
+                --muted-text: #a0a0a0;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,12 +35,14 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
+            background-color: var(--bg-color);
+            color: var(--text-color);
         }
 
         header {
             padding: 1rem;
-            background: white;
-            border-bottom: 1px solid #eee;
+            background: var(--header-bg);
+            border-bottom: 1px solid var(--border-color);
             text-align: center;
         }
 
@@ -52,12 +74,12 @@
         }
 
         tr:hover {
-            background-color: #f8f9fa;
+            background-color: var(--hover-bg);
         }
 
         td {
             padding: 0.5rem 1rem;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--border-color);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -66,16 +88,16 @@
 
         td:first-child {
             width: 200px;
-            color: #666;
+            color: var(--muted-text);
         }
 
         footer {
             padding: 0.5rem;
-            background: white;
-            border-top: 1px solid #eee;
+            background: var(--header-bg);
+            border-top: 1px solid var(--border-color);
             text-align: center;
             font-size: 0.875rem;
-            color: #666;
+            color: var(--muted-text);
         }
     </style>
 </head>
